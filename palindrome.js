@@ -11,15 +11,16 @@ function palindrome(num) {
     alert("This is a Palindrome");
   } else alert("Not a Palindrome");
 }
-
 palindrome(123454321);
 
 // with js functions
 let num = 123454321;
-let res = num.toString().split("").reverse().join();
-if (num === Number(res)) {
-  alert("This is a Palindrome");
-} else alert("Not a Palindrome");
+function palindrome(num) {
+  let res = num.toString().split("").reverse().join();
+  if (num === Number(res)) {
+    alert("This is a Palindrome");
+  } else alert("Not a Palindrome");
+}
 
 //string palindrome
 function palindrome(str) {
