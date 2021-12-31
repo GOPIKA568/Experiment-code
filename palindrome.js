@@ -1,3 +1,4 @@
+// Number palindrome
 function palindrome(num) {
     var final = 0;
     var temp = num;
@@ -7,8 +8,15 @@ function palindrome(num) {
       final = final * 10 + a;
     }
     if (final === temp) {
-      alert("palin");
-    } else alert("not");
+      alert("This is a Palindrome");
+    } else alert("Not a Palindrome");
   }
 
 palindrome(123454321);
+
+// with js functions
+let num = 123454321;
+let res = num.toString().split("").reverse().join();
+if (num === Number(res)) {
+        alert("This is a Palindrome");
+      } else alert("Not a Palindrome");
