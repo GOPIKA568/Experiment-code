@@ -20,3 +20,15 @@ let res = num.toString().split("").reverse().join();
 if (num === Number(res)) {
   alert("This is a Palindrome");
 } else alert("Not a Palindrome");
+
+//string palindrome
+function palindrome(str) {
+  let len = str.length;
+  for (var i = 0; i < len / 2; i++) {
+    if (str[i] !== str[len - 1 - i]) {
+      return false;
+    }
+    return false;
+  }
+}
+palindrome("malayalam");
