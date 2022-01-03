@@ -9,4 +9,8 @@ function targetAndIndex(nums, target) {
     }
   }
   return indexes;
-};
+}
+targetAndIndex(nums, target);
+
+//output
+//[0,1]
