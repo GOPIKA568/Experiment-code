@@ -13,7 +13,7 @@ function palindrome(num) {
 }
 palindrome(123454321);
 
-// with js functions
+// with javascript functions
 let num = 123454321;
 function palindrome(num) {
   let res = num.toString().split("").reverse().join();
