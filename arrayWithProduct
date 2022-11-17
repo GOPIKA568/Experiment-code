@@ -1,0 +1,16 @@
+
+//[1,2,3,4] ------------->  [24,12,8,6]
+
+function solution(A) {
+  let arr = [];
+  var p = 1,
+    i,
+    j;
+  for (i = 0; i < A.length; i++) {
+    p *= A[i];
+  }
+  for (j = 0; j < A.length; j++) {
+    arr.push(p / A[j]);
+  }
+}
+solution([1,2,3,4]);
