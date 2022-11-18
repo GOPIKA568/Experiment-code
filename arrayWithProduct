@@ -14,3 +14,20 @@ function solution(A) {
   }
 }
 solution([1,2,3,4]);
+
+
+//[1, 2, 3, 4, 0, -1] ---------> [0, 0, 0, 0, -24, 0]
+function solution(A) {
+  var result = [];
+  for (var i in A) {
+    var n = 1;
+    for (var j in A) {
+      if (i !== j) {
+        n *= A[j];
+      }
+    }
+    result.push(n);
+  }
+  return result;
+}
+solution([1, 2, 3, 4, 0, -1]);
