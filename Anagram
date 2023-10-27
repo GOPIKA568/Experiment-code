@@ -1,0 +1,8 @@
+function anagramString(s, t) {
+    let data = s.split("").sort().join("");
+    let data1 = t.split("").sort().join("");
+   return data === data1 ? true : false
+};
+anagramString(cat,tac)
+
+//true
